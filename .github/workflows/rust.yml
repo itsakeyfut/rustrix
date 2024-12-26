@@ -1,0 +1,39 @@
+name: Rust
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - develop
+  pull_request:
+    branches-ignore:
+      - main
+      - develop
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Rust
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+          source $HOME/.cargo/env
+          rustup --version
+          rustc --version
+          cargo --version
+
+      - name: Build
+        run: |
+          cd backend
+          cargo build --verbose
+
+      - name: Run tests
+        run: |
+          cd backend
+          cargo test --verbose
