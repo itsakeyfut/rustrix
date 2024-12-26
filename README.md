@@ -9,21 +9,17 @@
     - [default](#default)
     - [language](#language)
     - [color](#color)
-    - [random](#random)
-    - [rainbow](#rainbow)
+    - [random_mode](#random_mode)
+    - [rainbow color mode](#rainbow_color_mode)
 - [Command Options](#command-options)
     - [help](#help)
     - [version](#version)
-    - [language (short version)](#language (short version))
-    - [language (long version)](#language (long version))
-    - [color (short version)](#color (short version))
-    - [color (long version)](#color (long version))
-    - [random mode (short version)](#random mode (short version))
-    - [random mode (long version)](#random mode (long version))
-    - [text speed (short version)](#text speed (short version))
-    - [text speed (long version)](#text speed (long version))
-    - [helthreshold density (short version)p](#threshold density (short version))
-    - [threshold density (long version)](#threshold density (long version))
+    - [language](#language)
+    - [color (short version)](#color)
+    - [random mode](#random_mode)
+    - [rainbow_color_mode](#rainbow_color_mode)
+    - [text speed](#text_speed)
+    - [helthreshold density](#threshold_density)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -40,10 +36,10 @@
 ### color
 ![color](https://github.com/user-attachments/assets/20d60f2e-0d17-4487-b2d9-bc96cf316723)
 
-### random
+### random mode
 ![random](https://github.com/user-attachments/assets/cfe708cf-1be2-40a2-9646-ca9d908283a7)
 
-### rainbow
+### rainbow color mode
 ![rainbow](https://github.com/user-attachments/assets/636461ff-1fad-4737-8945-9ca72f2f94fb)
 
 ## Command Options
@@ -60,73 +56,61 @@ target/release/rustrix --help
 target/release/rustrix --version
 ```
 
-### language (short version)
+### language
 
 ```bash
 target/release/rustrix -l bin
 ```
 
-### language (long version)
-
 ```bash
 target/release/rustrix --language bin
 ```
 
-### color (short version)
+### color
 
 ```bash
 target/release/rustrix -C red
 ```
 
-### color (long version)
-
 ```bash
 target/release/rustrix --color red
 ```
 
-### random mode (short version)
+### random mode
 
 ```bash
 target/release/rustrix -r
 ```
 
-### random mode (long version)
-
 ```bash
 target/release/rustrix --random
 ```
 
-### rainbow color mode (short version)
+### rainbow color mode
 
 ```bash
 target/release/rustrix -R
 ```
 
-### rainbow color mode (long version)
-
 ```bash
 target/release/rustrix --rainbow
 ```
 
-### text speed (short version)
+### text speed
 
 ```bash
 target/release/rustrix -v slow
 ```
 
-### text speed (long version)
-
 ```bash
 target/release/rustrix --velocity slow
 ```
 
-### threshold density (short version)
+### threshold density
 
 ```bash
 target/release/rustrix -d 0.2
 ```
-
-### threshold density (long version)
 
 ```bash
 target/release/rustrix --density 0.2
