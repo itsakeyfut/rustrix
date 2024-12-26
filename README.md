@@ -6,12 +6,24 @@
 
 ## Contents
 - [Screen Capture](#screen-capture)
-    - [Default](#default)
+    - [default](#default)
     - [language](#language)
     - [color](#color)
     - [random](#random)
     - [rainbow](#rainbow)
 - [Command Options](#command-options)
+    - [help](#help)
+    - [version](#version)
+    - [language (short version)](#language (short version))
+    - [language (long version)](#language (long version))
+    - [color (short version)](#color (short version))
+    - [color (long version)](#color (long version))
+    - [random mode (short version)](#random mode (short version))
+    - [random mode (long version)](#random mode (long version))
+    - [text speed (short version)](#text speed (short version))
+    - [text speed (long version)](#text speed (long version))
+    - [helthreshold density (short version)p](#threshold density (short version))
+    - [threshold density (long version)](#threshold density (long version))
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
