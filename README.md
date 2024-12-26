@@ -25,22 +25,24 @@
 
 ## Screen Capture
 ### default
-![default](https://github.com/user-attachments/assets/ec118cfe-7da7-49c9-ab47-40b9bc3a5087)
+![default](https://github.com/user-attachments/assets/dc2098ff-c8dd-4360-ab70-e4e6e856ea5d)
 
 ### language
-![language](https://github.com/user-attachments/assets/e88524a3-c54e-4044-a4b5-4ab0269c3a55)
+![language](https://github.com/user-attachments/assets/01f71ab5-5b63-476b-9b9f-04d536af6695)
 
 ### density
-![density](https://github.com/user-attachments/assets/37e161f5-8e74-4f65-9555-2dda180c1d54)
+![density](https://github.com/user-attachments/assets/8f3c757c-444a-4e9b-977d-b388a02e80a6)
 
 ### color
-![color](https://github.com/user-attachments/assets/20d60f2e-0d17-4487-b2d9-bc96cf316723)
+![color](https://github.com/user-attachments/assets/ffad0ab5-8076-49aa-a6a2-710bbcf98c7a)
 
 ### random mode
-![random](https://github.com/user-attachments/assets/cfe708cf-1be2-40a2-9646-ca9d908283a7)
+![rand1](https://github.com/user-attachments/assets/aa5d3d81-88f1-42a3-b470-be33bf49a91d)
+
+![rand2](https://github.com/user-attachments/assets/9f3706e0-898d-4b88-ac97-03ac60aee0db)
 
 ### rainbow color mode
-![rainbow](https://github.com/user-attachments/assets/636461ff-1fad-4737-8945-9ca72f2f94fb)
+![rainbow](https://github.com/user-attachments/assets/6e629693-554d-43c9-863a-ab51e9161125)
 
 ## Command Options
 
