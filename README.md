@@ -1,6 +1,6 @@
 <h1 align="center">Rustrix</h1>
 
-<h3 align="center">The Matrix Like Terminal Renderer</h3>
+<h3 align="center">The Matrix Based On Terminal</h3>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
