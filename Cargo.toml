@@ -1,7 +1,17 @@
 [package]
 name = "rustrix"
 version = "0.1.0"
+authors = ["Ometeor-Zheero-OMZ <sicsempertyrannis98@gmail.com>"]
+description = "The Matrix Baed on Terminal"
+repository = "https://github.com/Ometeor-Zheero-OMZ/rustrix"
+readme = "README.md"
+categories = ["termianl", "animation"]
+license = "MIT"
 edition = "2021"
+rust-version = "1,83"
+
+[badges]
+maintenance = { status = "actively-developed" }
 
 [dependencies]
 anyhow = "1.0.95"
