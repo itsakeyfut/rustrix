@@ -11,7 +11,6 @@ pub struct Args {
         value_enum,
         default_value = "default",
         conflicts_with = "random",
-        conflicts_with = "rainbow",
         value_parser = validate_language
     )]
     pub language: Option<TextLanguage>,
