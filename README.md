@@ -1,4 +1,14 @@
-## The Matrix like Terminal Renderer
+<h1 align="center">Rustrix</h1>
+
+<h3 align="center">The Matrix Like Terminal Renderer</h3>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## Contents
+- [Screen Capture](#screen-capture)
+- [Command Options](#command-options)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ### Command Options
 
