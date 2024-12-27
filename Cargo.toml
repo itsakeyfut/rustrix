@@ -8,7 +8,7 @@ readme = "README.md"
 categories = ["termianl", "animation"]
 license = "MIT"
 edition = "2021"
-rust-version = "1,83"
+rust-version = "1.83"
 
 [badges]
 maintenance = { status = "actively-developed" }
