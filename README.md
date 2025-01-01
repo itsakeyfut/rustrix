@@ -2,7 +2,7 @@
 
 <h3 align="center">The Matrix Based On Terminal</h3>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+***
 
 ## Contents
 - [Screen Capture](#screen-capture)
@@ -21,7 +21,7 @@
     - [text speed](#text_speed)
     - [helthreshold density](#threshold_density)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+***
 
 ## Screen Capture
 ### default
