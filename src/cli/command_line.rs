@@ -1,6 +1,8 @@
 use clap::{Parser, ValueEnum};
 use rand::Rng;
 
+use crate::matrix::waterfall::Axis;
+
 #[derive(Parser, Debug)]
 #[command(version, about, flatten_help = true)]
 pub struct Args {
@@ -55,6 +57,16 @@ pub struct Args {
         value_parser = validate_density
     )]
     pub threshold_density: f32,
+
+    /// specify a axis
+    #[arg(
+        short = 'a',
+        long = "axis",
+        value_enum,
+        default_value = "y",
+        value_parser = validate_axis
+    )]
+    pub axis: Option<TextAxis>,
 
     /// random color
     #[arg(
@@ -142,6 +154,18 @@ fn validate_density(val: &str) -> Result<f32, String> {
         Ok(parsed)
     } else {
         Err("Density must be between 0.01 and 1.0".to_string())
+    }
+}
+
+/// Validate an axis option
+fn validate_axis(val: &str) -> Result<TextAxis, String> {
+    match val.to_lowercase().as_str() {
+        "y" => Ok(TextAxis::Y),
+        "x" => Ok(TextAxis::X),
+        _ => Err(format!(
+            "Invalid axis: '{}'. Allowed values are: x or y.",
+            val
+        ))
     }
 }
 
@@ -244,6 +268,21 @@ impl TextSpeed {
             TextSpeed::Normal => 75,
             TextSpeed::Slow => 120,
             TextSpeed::Fast => 45,
+        }
+    }
+}
+
+#[derive(ValueEnum, Debug, Clone, PartialEq)]
+pub enum TextAxis {
+    X,
+    Y
+}
+
+impl TextAxis {
+    pub fn to_axis_enum(&self) -> Axis {
+        match self {
+            TextAxis::Y => Axis::Y,
+            TextAxis::X => Axis::X
         }
     }
 }

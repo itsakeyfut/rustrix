@@ -39,7 +39,6 @@ impl Glyph {
                 b: self.color.b
             })
         )?;
-        // write!(out, "\x1b[11m")?;
         write!(out, "{}", text_size_code)?;
         queue!(out, style::Print(self.character.to_string())).context("write glyph to output")?;
         Ok(())

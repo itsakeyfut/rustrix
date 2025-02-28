@@ -8,7 +8,7 @@ use super::glyph::Glyph;
 
 
 #[derive(Clone)]
-pub struct Column {
+pub struct Row {
     height: u16,
     base_color: Color,
     glyphs: Vec<Glyph>,
@@ -17,7 +17,7 @@ pub struct Column {
     rainbow_mode: bool
 }
 
-impl Column {
+impl Row {
     pub fn new(height: u16, base_color: Color, threshold: f32, rainbow_mode: bool) -> Self {
         Self {
             height,
@@ -29,12 +29,12 @@ impl Column {
         }
     }
 
-    pub fn render_at_y<W: Write>(&self, out: &mut W, y: u16, text_size_code: &str) -> Result<()> {
-        if (y as usize) >= self.height as usize {
-            return Err(anyhow::anyhow!("y index out of bounds: {}", y).into());
+    pub fn render_at_x<W: Write>(&self, out: &mut W, x: u16, text_size_code: &str) -> Result<()> {
+        if (x as usize) >= self.height as usize {
+            return Err(anyhow::anyhow!("x index out of bounds: {}", x).into());
         }
 
-        self.glyphs[y as usize].display_glyphs(out, text_size_code)?;
+        self.glyphs[x as usize].display_glyphs(out, text_size_code)?;
         Ok(())
     }
 
