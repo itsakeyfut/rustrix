@@ -1,14 +1,14 @@
 [package]
 name = "rustrix"
 version = "0.1.0"
-authors = ["Ometeor-Zheero-OMZ <sicsempertyrannis98@gmail.com>"]
+authors = ["itsakeyfut <sicsempertyrannis98@gmail.com>"]
 description = "The Matrix Baed on Terminal"
-repository = "https://github.com/Ometeor-Zheero-OMZ/rustrix"
+repository = "https://github.com/itsakeyfut/rustrix"
 readme = "README.md"
 categories = ["termianl", "animation"]
 license = "MIT"
-edition = "2021"
-rust-version = "1.83"
+edition = "2024"
+rust-version = "1.86"
 
 [badges]
 maintenance = { status = "actively-developed" }
@@ -19,3 +19,16 @@ clap = { version = "4.5.23", features = ["derive"] }
 crossterm = "0.28.1"
 ctrlc = "3.4.5"
 rand = "0.8.5"
+
+[profile.dev]
+opt-level = 3
+incremental = false
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+debug = false
+incremental = false
