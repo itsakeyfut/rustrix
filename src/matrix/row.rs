@@ -45,13 +45,13 @@ impl Row {
         }
 
         // Add conditions if not generate random numbers
-        if self.active_index == 0 && rand.gen::<f32>() > self.threshold {
+        if self.active_index == 0 && rand.r#gen::<f32>() > self.threshold {
             return;
         }
 
         // Configured glyphs' color
         let color = if self.rainbow_mode {
-            Color::from_rgb(rand.gen(), rand.gen(), rand.gen())
+            Color::from_rgb(rand.r#gen(), rand.r#gen(), rand.r#gen())
         } else {
             self.base_color
         };
