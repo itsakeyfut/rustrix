@@ -1,119 +1,159 @@
-<h1 align="center">Rustrix</h1>
+# Rustrix
 
-<h3 align="center">The Matrix Based On Terminal</h3>
+[![Status](https://img.shields.io/badge/status-active--development-brightgreen?style=flat-square)]()
+[![Rust Version](https://img.shields.io/badge/rust-1.86+-blue.svg)](https://www.rust-lang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-***
+> 🚧 This project is under active development. Breaking changes may occur.
 
-## Contents
-- [Screen Capture](#screen-capture)
-    - [default](#default)
-    - [language](#language)
-    - [color](#color)
-    - [random_mode](#random_mode)
-    - [rainbow color mode](#rainbow_color_mode)
-- [Command Options](#command-options)
-    - [help](#help)
-    - [version](#version)
-    - [language](#language)
-    - [color (short version)](#color)
-    - [random mode](#random_mode)
-    - [rainbow_color_mode](#rainbow_color_mode)
-    - [text speed](#text_speed)
-    - [helthreshold density](#threshold_density)
+## Overview
 
-***
+Rustrix is a terminal-based animation project that simulates a "falling text" effect, inspired by scenes from the movie The Matrix.
+Characters flow down the terminal screen in a randomized, visually dynamic manner.
 
-## Screen Capture
-### default
-![default](https://github.com/user-attachments/assets/dc2098ff-c8dd-4360-ab70-e4e6e856ea5d)
+## Screenshots
 
-### language
-![language](https://github.com/user-attachments/assets/01f71ab5-5b63-476b-9b9f-04d536af6695)
+### bin
 
-### density
-![density](https://github.com/user-attachments/assets/8f3c757c-444a-4e9b-977d-b388a02e80a6)
+![Binary](./img/bin.png)
 
-### color
-![color](https://github.com/user-attachments/assets/ffad0ab5-8076-49aa-a6a2-710bbcf98c7a)
+### random
 
-### random mode
-![rand1](https://github.com/user-attachments/assets/aa5d3d81-88f1-42a3-b470-be33bf49a91d)
+![Random](./img/random.png)
 
-![rand2](https://github.com/user-attachments/assets/9f3706e0-898d-4b88-ac97-03ac60aee0db)
+### rainbow
 
-### rainbow color mode
-![rainbow](https://github.com/user-attachments/assets/6e629693-554d-43c9-863a-ab51e9161125)
+![Rainbow](./img/rainbow.png)
 
-## Command Options
+## Purpose
 
-### help
+This project was created to learn how to define and handle command-line arguments and implement smooth terminal animations using Rust.
+Mastering CLI arguments has significantly benefited my other Rust projects by providing flexible runtime configurations.
 
-```bash
+## Features
+
+- Control animation behavior via command-line arguments:
+  - Text color
+  - Language (character set)
+  - Font size (character scaling)
+  - Animation speed
+  - Text density
+  - Randomized character mode
+  - Rainbow color mode
+- Smooth terminal animations using crossterm
+- Custom random number generator to control character appearance probabilities
+
+## Technical Implementation
+
+- Rust v1.86
+- clap v4.5
+- crossterm v0.28
+- ctrlc v3.4
+- rand v0.8
+
+## Building from Source
+
+```sh
+cargo build --release
+```
+
+## Usage
+
+### Help
+
+```sh
 target/release/rustrix --help
 ```
 
-### version
+### Version
 
-```bash
+```sh
 target/release/rustrix --version
 ```
 
-### language
+### Select Language
 
-```bash
+```sh
 target/release/rustrix -l bin
 ```
 
-```bash
+or
+
+```sh
 target/release/rustrix --language bin
 ```
 
-### color
+### Set Text Color
 
-```bash
+```sh
 target/release/rustrix -C red
 ```
 
-```bash
+or
+
+```sh
 target/release/rustrix --color red
 ```
 
-### random mode
+### Enable Random Mode
 
-```bash
+```sh
 target/release/rustrix -r
 ```
 
-```bash
+or
+
+```sh
 target/release/rustrix --random
 ```
 
-### rainbow color mode
+### Enable Rainbow Color Mode
 
-```bash
+```sh
 target/release/rustrix -R
 ```
 
-```bash
+pr
+
+```sh
 target/release/rustrix --rainbow
 ```
 
-### text speed
+### Adjust Text Speed
 
-```bash
+```sh
 target/release/rustrix -v slow
 ```
 
-```bash
+or
+
+```sh
 target/release/rustrix --velocity slow
 ```
 
-### threshold density
+### Adjust Text Density
 
-```bash
+```sh
 target/release/rustrix -d 0.2
 ```
 
-```bash
+or
+
+```sh
 target/release/rustrix --density 0.2
 ```
+
+## Future Development
+
+- Create a WebGL-based version to run animations in browsers
+- Develop a Firefox extension/theme featuring the animation
+
+## License
+
+MIT License
+
+## Author
+
+**itsakeyfut**
+
+Feel free to contact me for collaboration or job opportunities.
